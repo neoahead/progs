@@ -29,7 +29,7 @@ public result commonAncestorUtil(TreeNode root, TreeNode p, TreeNode q){
         return new result(root, true);
     }
     else if ( root == p || root == q){
-        return new result(root, (left.res== null || right.res == null)? true : false);
+        return new result(root, (left.res != null || right.res != null)? true : false);
     }
     else
         return new result((left.res != null)? left.res : right.res, false);
