@@ -14,7 +14,7 @@ public TreeNode getSuccessor(TreeNode root, TreeNode current){
         TreeNode ancestor = root;
         TreeNode successor = null;
         while(ancestor != current){
-            if(ancestor.value < current.value){
+            if(ancestor.value > current.value){
                 successor = ancestor; // current node is in left for this.. hence inorder always passes through this. while loop makein sure that deepest root from the root. hence the successor.                
                 ancestor = ancestor.left;
                 }
